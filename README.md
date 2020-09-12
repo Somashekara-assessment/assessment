@@ -2,6 +2,9 @@
 
 As per the requirments project has built in Jenkins. below is the Link
 
+username : admin
+password : admin
+
 http://ec2-18-217-63-227.us-east-2.compute.amazonaws.com:8080/job/football-league/3/console
 
 And Api's are
