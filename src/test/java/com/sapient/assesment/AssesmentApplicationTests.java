@@ -35,7 +35,7 @@ class AssesmentApplicationTests {
 		System.out.println(result.getStatusCodeValue());
 		System.out.println(result.getBody());
 		Assert.assertEquals(200, result.getStatusCodeValue());
-		Assert.assertEquals(true, result.getBody().contains("countriesList"));
+		Assert.assertEquals(true, result.getBody().contains("country_id"));
 	}
 
 	@SuppressWarnings("deprecation")
@@ -52,7 +52,7 @@ class AssesmentApplicationTests {
 		System.out.println(result.getStatusCodeValue());
 		System.out.println(result.getBody());
 		Assert.assertEquals(200, result.getStatusCodeValue());
-		Assert.assertEquals(true, result.getBody().contains("leagueList"));
+		Assert.assertEquals(true, result.getBody().contains("league_id"));
 	}
 
 	@SuppressWarnings("deprecation")
@@ -69,7 +69,7 @@ class AssesmentApplicationTests {
 		System.out.println(result.getStatusCodeValue());
 		System.out.println(result.getBody());
 		Assert.assertEquals(200, result.getStatusCodeValue());
-		Assert.assertEquals(true, result.getBody().contains("teamList"));
+		Assert.assertEquals(true, result.getBody().contains("team_key"));
 	}
 
 	@SuppressWarnings("deprecation")
@@ -86,6 +86,6 @@ class AssesmentApplicationTests {
 		System.out.println(result.getStatusCodeValue());
 		System.out.println(result.getBody());
 		Assert.assertEquals(200, result.getStatusCodeValue());
-		Assert.assertEquals(true, result.getBody().contains("positionList"));
+		Assert.assertEquals(true, result.getBody().contains("overall_league_position"));
 	}
 }
