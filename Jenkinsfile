@@ -19,7 +19,7 @@ node {
 
 
             sh docker build -t football_league:latest .
-            sh docker push somk0306/assessment:ootball_league:latest
+            //sh docker push somk0306/assessment:ootball_league:latest
             sh docker run -d  -p 8080:8080 football_league
 
          // }
