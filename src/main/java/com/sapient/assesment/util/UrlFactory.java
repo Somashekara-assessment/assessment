@@ -22,8 +22,6 @@ public class UrlFactory {
 
 		StringBuilder urlvalue = new StringBuilder(url);
 
-		System.out.println(urlvalue);
-
 		urlvalue.append(FootBallConstants.APIKEY + equals + apikey + and);
 
 		if (FootBallConstants.COUNTRY.equals(type)) {
@@ -40,7 +38,6 @@ public class UrlFactory {
 			urlvalue.append(FootBallConstants.ACTION + equals + FootBallConstants.POSITION_ACTION + and + "league_id="
 					+ LeagueId);
 		}
-		System.out.println(urlvalue);
 
 		return urlvalue.toString();
 	}
