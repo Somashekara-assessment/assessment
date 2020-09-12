@@ -1,0 +1,62 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.21">
+<actions/>
+<description> football </description>
+<properties>
+<org.jenkinsci.plugins.configfiles.folder.FolderConfigFileProperty plugin="config-file-provider@3.6.2">
+<configs class="sorted-set">
+<comparator class="org.jenkinsci.plugins.configfiles.folder.FolderConfigFileProperty$1"/>
+</configs>
+</org.jenkinsci.plugins.configfiles.folder.FolderConfigFileProperty>
+</properties>
+<folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.5.4">
+<owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
+</folderViews>
+<healthMetrics/>
+<icon class="jenkins.branch.MetadataActionFolderIcon" plugin="branch-api@2.5.4">
+<owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
+</icon>
+<orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@6.9">
+<pruneDeadBranches>true</pruneDeadBranches>
+<daysToKeep>7</daysToKeep>
+<numToKeep>30</numToKeep>
+</orphanedItemStrategy>
+<triggers>
+<com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger plugin="cloudbees-folder@6.9">
+<spec>* * * * *</spec>
+<interval>60000</interval>
+</com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger>
+</triggers>
+<disabled>false</disabled>
+<sources class="jenkins.branch.MultiBranchProject$BranchSourceList" plugin="branch-api@2.5.4">
+<data>
+<jenkins.branch.BranchSource>
+<source class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@2.5.8">
+
+<repoOwner>assessment</repoOwner>
+<repository>football</repository>
+<traits>
+<org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait>
+<strategyId>1</strategyId>
+</org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait>
+<org.jenkinsci.plugins.github__branch__source.OriginPullRequestDiscoveryTrait>
+<strategyId>1</strategyId>
+</org.jenkinsci.plugins.github__branch__source.OriginPullRequestDiscoveryTrait>
+<org.jenkinsci.plugins.github__branch__source.ForkPullRequestDiscoveryTrait>
+<strategyId>1</strategyId>
+<trust class="org.jenkinsci.plugins.github_branch_source.ForkPullRequestDiscoveryTrait$TrustPermission"/>
+</org.jenkinsci.plugins.github__branch__source.ForkPullRequestDiscoveryTrait>
+</traits>
+</source>
+<strategy class="jenkins.branch.DefaultBranchPropertyStrategy">
+<properties class="empty-list"/>
+</strategy>
+</jenkins.branch.BranchSource>
+</data>
+<owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
+</sources>
+<factory class="org.jenkinsci.plugins.workflow.multibranch.WorkflowBranchProjectFactory">
+<owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
+<scriptPath>Jenkinsfile</scriptPath>
+</factory>
+</org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject>
